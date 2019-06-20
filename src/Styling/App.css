@@ -27,6 +27,7 @@
 
 .polygon {
   cursor: pointer;
+  transition: 1s;
 }
 
 a {

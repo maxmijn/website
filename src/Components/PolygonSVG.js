@@ -16,7 +16,7 @@ class PolygonSVG extends React.Component {
 
   componentDidMount () {
     this.changeColor()
-    // this.intervalId = setInterval(this.changeColor.bind(this), 10000)
+    this.intervalId = setInterval(this.changeColor.bind(this), 10000)
   }
 
   componentWillUnmount () {

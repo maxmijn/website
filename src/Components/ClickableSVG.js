@@ -6,7 +6,7 @@ class Canvas extends React.Component {
 
   render () {
     return (
-      <svg viewBox='0 0 535 461' version='1.1' xmlns='http://www.w3.org/2000/svg'>
+      <svg viewBox='0 0 535 461' version='1.1' xmlns='http://www.w3.org/2000/svg' transform='scale(-1,1)'>
         <title>Group 2</title>
         <desc>Created with Sketch.</desc>
         <g id='aa' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'>
