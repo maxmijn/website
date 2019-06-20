@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="183px" viewBox="0 0 102 183" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <script type="text/javascript">
+        alert('Hi')
+    </script>   
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-250.000000, -121.000000)" fill="#D8D8D8" stroke="#979797">
+            <g id="Group" transform="translate(250.000000, 121.000000)">
+                <path d="M1.5,1.13178174 L1.5,91.5 L100.708587,91.5 L1.5,1.13178174 Z" id="Rectangle"></path>
+                <path d="M1.5,92.1317817 L1.5,182.5 L100.708587,182.5 L1.5,92.1317817 Z" id="Rectangle-Copy" transform="translate(51.500000, 137.000000) rotate(-180.000000) translate(-51.500000, -137.000000) "></path>
+                <path d="M0.5,2.12431784 L0.5,92.5 L100.699126,92.5 L0.5,2.12431784 Z" id="Rectangle-Copy-2" transform="translate(51.000000, 47.000000) rotate(-180.000000) translate(-51.000000, -47.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

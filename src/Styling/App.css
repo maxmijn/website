@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+  background-color: #f0b7a4;
+  height: 100vh;
+  flex-direction: row;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: 0 !important;
+}
+
+.Left {
+  text-align: left;
+  font-weight: 100;
+  line-height: 1.5em;
+  font-size: 0.9em;
+  padding: 4em !important;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.Right {
+  justify-content: space-between;
+  align-items: center;
+  padding: 6em !important;
+}
+
+.polygon {
+  cursor: pointer;
+}
+
+a {
+  color: white !important;
+} 
+
+a:hover {
+  color: #f1d1b5 !important;
+}
+
+.Social {
+  margin-left: 0.5em;
+}
+
+.SecondPage {
+  text-align: center;
+  background-color: #305f72;
+  min-height: 100vh;
+  flex-direction: row;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: 0 !important;
+}
+
+.VMC-Logo {
+  width: 10em;
+}
+
+.Ios-app {
+  height: 68%;
+}
+.Android-app {
+  height: 100%;
+}
