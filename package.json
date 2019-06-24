@@ -2,7 +2,7 @@
   "name": "max_website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://maxmijn.github.io/website",
+  "homepage": "https://maxmijnheer.nl",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.0.1",
