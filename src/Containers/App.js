@@ -6,6 +6,8 @@ import FirstCase from './FirstCase'
 function App () {
   return (
     <div>
+      <div className='Fadebar' />
+      <div className='FadebarBottom' />
       <LandingPage />
       <FirstCase />
     </div>

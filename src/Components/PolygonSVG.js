@@ -33,7 +33,7 @@ class PolygonSVG extends React.Component {
 
   render () {
     return (
-      <polygon class='polygon' onClick={() => this.changeColor()} points={this.props.points} fill={this.state.color} />
+      <polygon className='polygon' onClick={() => this.changeColor()} points={this.props.points} fill={this.state.color} />
     )
   }
 }

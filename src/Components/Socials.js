@@ -8,10 +8,10 @@ function Socials () {
         <FaGithub />
       </a>
       <a href='//https://www.instagram.com/maxmijn/'>
-        <FaInstagram class='Social' />
+        <FaInstagram className='Social' />
       </a>
       <a href='mailto:max.mijnheer@gmail.com'>
-        <FaEnvelope class='Social' />
+        <FaEnvelope className='Social' />
       </a>
     </div>
   )
