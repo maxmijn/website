@@ -2,14 +2,14 @@ import React from 'react'
 import '../Styling/App.css'
 import LandingPage from './LandingPage'
 import FirstCase from './FirstCase'
+import Footer from './Footer'
 
 function App () {
   return (
     <div>
-      <div className='Fadebar' />
-      <div className='FadebarBottom' />
       <LandingPage />
       <FirstCase />
+      <Footer />
     </div>
   )
 }
