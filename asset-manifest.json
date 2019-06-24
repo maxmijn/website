@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.6c67ce23.chunk.css",
-    "main.js": "/website/static/js/main.37f81bc7.chunk.js",
-    "main.js.map": "/website/static/js/main.37f81bc7.chunk.js.map",
-    "runtime~main.js": "/website/static/js/runtime~main.de462641.js",
-    "runtime~main.js.map": "/website/static/js/runtime~main.de462641.js.map",
-    "static/css/2.22a7d4ef.chunk.css": "/website/static/css/2.22a7d4ef.chunk.css",
-    "static/js/2.f3060554.chunk.js": "/website/static/js/2.f3060554.chunk.js",
-    "static/js/2.f3060554.chunk.js.map": "/website/static/js/2.f3060554.chunk.js.map",
-    "index.html": "/website/index.html",
-    "precache-manifest.c24d85eda156a414cd1152d3bbdacc37.js": "/website/precache-manifest.c24d85eda156a414cd1152d3bbdacc37.js",
-    "service-worker.js": "/website/service-worker.js",
-    "static/css/2.22a7d4ef.chunk.css.map": "/website/static/css/2.22a7d4ef.chunk.css.map",
-    "static/css/main.6c67ce23.chunk.css.map": "/website/static/css/main.6c67ce23.chunk.css.map",
-    "static/media/vmc_white.png": "/website/static/media/vmc_white.269f57b0.png"
+    "main.css": "/static/css/main.6c67ce23.chunk.css",
+    "main.js": "/static/js/main.2ac22820.chunk.js",
+    "main.js.map": "/static/js/main.2ac22820.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.22a7d4ef.chunk.css": "/static/css/2.22a7d4ef.chunk.css",
+    "static/js/2.defde3a1.chunk.js": "/static/js/2.defde3a1.chunk.js",
+    "static/js/2.defde3a1.chunk.js.map": "/static/js/2.defde3a1.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a0f8e439b2dffb29ab4175ffcb0b4634.js": "/precache-manifest.a0f8e439b2dffb29ab4175ffcb0b4634.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.22a7d4ef.chunk.css.map": "/static/css/2.22a7d4ef.chunk.css.map",
+    "static/css/main.6c67ce23.chunk.css.map": "/static/css/main.6c67ce23.chunk.css.map",
+    "static/media/vmc_white.png": "/static/media/vmc_white.269f57b0.png"
   }
 }
