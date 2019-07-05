@@ -8,37 +8,66 @@ const steps = [
   {
     id: '1',
     options: [
-      { value: 2, label: 'Start', trigger: '2' },
-    ],
+      { value: 2, label: 'Start', trigger: '2' }
+    ]
   },
   {
     id: '2',
-    message: 'OMG ERIK',
-    trigger: '3',
+    message: 'Hi there! What is your name?',
+    trigger: '3'
   },
   {
     id: '3',
     user: true,
-    trigger: '4',
+    trigger: '4'
   },
   {
     id: '4',
     message: 'Hi {previousValue}, nice to meet you!',
-    end: true,
+    trigger: '5'
+  },
+  {
+    id: '5',
+    message: 'Would you like to know more about Max?',
+    trigger: '6'
+  },
+  {
+    id: '6',
+    options: [
+      { value: 7, label: 'Yes', trigger: '7' },
+      { value: 8, label: 'No', trigger: '8' }
+    ]
+  },
+  {
+    id: '7',
+    message: 'Great! I have some things I could show you about Max. Please select one.',
+    end: true
+  },
+  {
+    id: '8',
+    message: 'No problem at all, have a great day!',
+    end: true
+  },
+  {
+    id: '9',
+    options: [
+      { value: 7, label: 'Yes', trigger: '7' },
+      { value: 8, label: 'No', trigger: '8' }
+    ]
   },
 ]
 
 const theme = {
   background: '#f5f8fb',
-  fontFamily: 'Helvetica Neue',
+  fontFamily: 'Roboto',
   headerBgColor: '#f18c8e',
   headerFontColor: '#fff',
   headerFontSize: '15px',
   botBubbleColor: '#f18c8e',
   botFontColor: '#fff',
   userBubbleColor: '#fff',
-  userFontColor: '#4a4a4a',
-};
+  userFontColor: '#4a4a4a'
+}
 
 function FirstCase () {
   return (
@@ -48,14 +77,10 @@ function FirstCase () {
           <h1>Me, Myself and I</h1>
           <p> Would you like to know more about me? Feel free to chat with my bot!</p>
         </div>
-        <div style={{display: 'flex', flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-          <div style={{ width: '50%', height: 600, backgroundColor: '#f1d1b5', transform: 'translateX(40%)'}} >
-          </div>
-          <div style={{ width: '50%', height: 600, backgroundColor: '#305f72', transform: 'translateX(-50%)translateY(10%)'}} >
-            <ThemeProvider theme={theme}>
-              <ChatBot style={{borderRadius: 0, width: '100%', height: '100%'}} steps={steps} />
-            </ThemeProvider>
-          </div>
+        <div className='Chatbot col-sm-6 grid-container'>
+          <ThemeProvider theme={theme}>
+            <ChatBot style={{ borderRadius: 0 }} steps={steps} />
+          </ThemeProvider>
         </div>
         {/* <div style={{justifyContent: 'space-between'}} className='Right col-sm-6'>
           <img src={vmc} class='VMC-Logo' />

@@ -99,3 +99,20 @@ h1 {
   font-size: 2em;
   margin-top: 1em
 }
+
+.Chatbot {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 4em !important;
+}
+
+.grid-container2 {
+  display: inline-grid;
+  grid-template-columns: 1fr 20fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-areas: ". . ." ". . ." ". . .";
+  margin: 5vw 10vw 5vw 10vw;
+  flex: 1
+}

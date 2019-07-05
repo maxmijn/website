@@ -28,7 +28,7 @@ class Canvas extends React.Component {
   }
 
   handleScroll (event) {
-    let scrollTop = event.pageY
+    let scrollTop = document.documentElement.scrollTop
     let percentageDown = 1 - scrollTop / this.state.height
     let widthSVG = (0.5 * this.state.width) * percentageDown + (0.15 * this.state.width)
     if (widthSVG > this.state.width / 6) {
@@ -39,9 +39,13 @@ class Canvas extends React.Component {
   updateWindowDimensions () {
     let width = window.innerWidth
     let height = window.innerHeight
-    let scrollTop = window.pageYOffset
+    let scrollTop = document.documentElement.scrollTop
     let percentageDown = 1 - scrollTop / height
-    this.setState({ widthSVG: (0.5 * width) * percentageDown + (0.15 * width), width, height })
+    let widthSVG = (0.5 * width) * percentageDown + (0.15 * width)
+    if (widthSVG < width / 6) {
+      widthSVG = width / 6
+    }
+    this.setState({ widthSVG: widthSVG, width, height })
   }
 
   render () {
