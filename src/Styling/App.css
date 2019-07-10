@@ -8,6 +8,15 @@
   margin: 0 !important;
 }
 
+p {
+  color: white;
+  line-height: 1.5em;
+}
+
+h1, h2, h3, h4 {
+  color: white
+}
+
 .Left {
   text-align: left;
   font-weight: 100;
@@ -115,4 +124,33 @@ h1 {
   grid-template-areas: ". . ." ". . ." ". . .";
   margin: 5vw 10vw 5vw 10vw;
   flex: 1
+}
+
+.navCircle {
+  width: 16px;
+  height: 16px;
+  margin-top: 16px;
+  border-radius: 8px;
+  border: 2px solid white;
+  transition: 0.5s;
+}
+
+.navCircle:hover {
+  background-color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.navCircleActive:hover {
+  cursor: pointer;
+}
+
+.navCircleActive {
+  background-color: white;
+  transition: 0.5s;
+  width: 16px;
+  height: 16px;
+  margin-top: 16px;
+  border-radius: 8px;
+  border: 2px solid white
 }
