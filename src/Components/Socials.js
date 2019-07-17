@@ -5,16 +5,16 @@ function Socials () {
   return (
     <div>
       <a href='//www.linkedin.com/in/max-mijnheer-5612ab114/' >
-        <FaLinkedin />
+        <FaLinkedin size={20} className='Social' />
       </a>
       <a href='//github.com/maxmijn' >
-        <FaGithub className='Social' />
+        <FaGithub size={20} className='Social' />
       </a>
       <a href='//www.instagram.com/maxmijn/'>
-        <FaInstagram className='Social' />
+        <FaInstagram size={20} className='Social' />
       </a>
       <a href='mailto:max.mijnheer@gmail.com'>
-        <FaEnvelope className='Social' />
+        <FaEnvelope size={20} />
       </a>
     </div>
   )

@@ -45,6 +45,9 @@ class Navigation extends React.Component {
   }
 
   render () {
+    if (this.state.width < 500) {
+      return (null)
+    }
     return (
       <div style={{ position: 'fixed', top: '50%', right: '2%', zIndex: 999 }}>
         <Link to='landingPage' smooth>
