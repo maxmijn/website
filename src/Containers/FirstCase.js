@@ -1,8 +1,8 @@
 import React from 'react'
-import vmc from '../Images/vmc_white.png'
 import { ThemeProvider } from 'styled-components'
 import ChatBot from 'react-simple-chatbot'
 import { Element } from 'react-scroll'
+import firebase from '../firebase.js';
 
 const steps = [
   {
@@ -41,20 +41,53 @@ const steps = [
   {
     id: '7',
     message: 'Great! I have some things I could show you about Max. Please select one.',
-    end: true
+    trigger: '9'
   },
   {
     id: '8',
-    message: 'No problem at all, have a great day!',
-    end: true
+    message: 'No problem at all, have a great day! If you change your mind, check below for more. You can leave a small message with your contact info here.',
+    trigger: '14'
   },
   {
     id: '9',
+    options: [
+      { value: 7, label: 'Age', trigger: '10' },
+      { value: 8, label: 'Skills', trigger: '11' },
+      { value: 9, label: 'Experience', trigger: '12' }
+    ]
+  },
+  {
+    id: '10',
+    message: 'Max is 24 years old. Would you like to know more?',
+    trigger: '13'
+  },
+  {
+    id: '13',
     options: [
       { value: 7, label: 'Yes', trigger: '7' },
       { value: 8, label: 'No', trigger: '8' }
     ]
   },
+  {
+    id: '11',
+    message: 'Max\' expertise lies withing creating smooth user experiences. The core languages used are JavaScript and Python. Would you like to know more?',
+    trigger: '13'
+  },
+  {
+    id: '12',
+    message: 'Max\' studied Artifical Intelligence in Amsterdam. After that he worked for a mobility startup, called VMC. Would you like to know more?',
+    trigger: '13'
+  },
+  {
+    id: '14',
+    user: true,
+    trigger: '15'
+  },
+  {
+    id: '15',
+    message: 'Thanks for the message. Max will try to reach out as soon as possible!',
+    end: true
+  }
 ]
 
 const theme = {
@@ -69,29 +102,38 @@ const theme = {
   userFontColor: '#4a4a4a'
 }
 
-function FirstCase () {
-  return (
-    <Element name='firstCase'>
-      <div className='SecondPage row'>
-        <div className='Left col-sm-6'>
-          <h1>Me, Myself and I</h1>
-          <p> Would you like to know more about me? Feel free to chat with my bot!</p>
-        </div>
-        <div className='Chatbot col-sm-6 grid-container'>
-          <ThemeProvider theme={theme}>
-            <ChatBot style={{ borderRadius: 0 }} steps={steps} />
-          </ThemeProvider>
-        </div>
-        {/* <div style={{justifyContent: 'space-between'}} className='Right col-sm-6'>
-          <img src={vmc} class='VMC-Logo' />
-          <div>
-            <a href="https://apps.apple.com/us/app/vmc-go/id1434419887?mt=8"><img style={{flex: 1}} class='Ios-app' src='https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2018-09-24&kind=iossoftware&bubble=ios_apps'/></a>
-            <a href='https://play.google.com/store/apps/details?id=com.vmc.travel&hl=en_US&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style={{flex: 1}} class='Android-app' alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+class FirstCase extends React.Component {
+  componentDidMount () {
+    this.handleEnd = this.handleEnd.bind(this)
+  }
+
+  handleEnd ({ steps, values }) {
+    // Removes null and undefined values from the steps
+    steps.forEach(step => {
+      Object.keys(step).forEach(key => step[key] === undefined ? delete step[key] : '')
+    })
+    console.log(steps)
+    const stepsRef = firebase.database().ref('steps/step');
+    stepsRef.push(steps);
+  }
+
+  render () {
+    return (
+      <Element name='firstCase'>
+        <div className='SecondPage row'>
+          <div className='Left col-sm-6'>
+            <h1>Me, Myself and I</h1>
+            <p> Would you like to know more about me? Feel free to chat with my bot!</p>
           </div>
-        </div> */}
-      </div>
-    </Element>
-  )
+          <div className='Chatbot col-sm-6 grid-container'>
+            <ThemeProvider theme={theme}>
+              <ChatBot handleEnd={this.handleEnd} style={{ borderRadius: 0 }} steps={steps} />
+            </ThemeProvider>
+          </div>
+        </div>
+      </Element>
+    ) 
+  }
 }
 
 export default FirstCase
