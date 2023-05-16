@@ -10,9 +10,9 @@ function Cases () {
           <div style={{ backgroundColor: '#305f72', gridColumnStart: '2', gridColumnEnd: '4', gridRowStart: '2', gridRowEnd: '4' }}>
             <div className='container-fluid' style={{ padding: '5vw', minHeight: '100%' }}>
               <div className='row'>
-                <div className='col-sm-6' style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}}>
+                <div className='col-sm-6' style={{display: 'flex', flexDirection: 'column'}}>
                   <h2>More about me</h2>
-                  <p>
+                  <p style={{marginTop: 50,}}>
                     I am a software engineer and founder from Amsterdam, the Netherlands. I grew up with a passion for new technology and innovation. After graduating a BSc in Artificial Intelligence at the University of Amsterdam I worked for different startups, ranging from a blockchain disruptor to a flower auction platform. I joined <a href="https://bash.social">BASH</a> in 2020 as a co-founder and have been passionately working on it since.
                   </p>
                 </div>

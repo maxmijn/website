@@ -58,7 +58,7 @@ const steps = [
   },
   {
     id: '10',
-    message: 'Max is 24 years old. Would you like to know more?',
+    message: 'Max is 28 years old. Would you like to know more?',
     trigger: '13'
   },
   {
@@ -70,12 +70,12 @@ const steps = [
   },
   {
     id: '11',
-    message: 'Max\' expertise lies withing creating smooth user experiences. The core languages used are JavaScript and Python. Would you like to know more?',
+    message: 'Max\' expertise lies within creating smooth user experiences and managing how to get there. Would you like to know more?',
     trigger: '13'
   },
   {
     id: '12',
-    message: 'Max\' studied Artifical Intelligence in Amsterdam. After that he worked for a mobility startup, called VMC. Would you like to know more?',
+    message: 'Max\' studied Artifical Intelligence in Amsterdam. After that he worked for a mobility startup and a development agency. He is now founder of BASH. Would you like to know more?',
     trigger: '13'
   },
   {
