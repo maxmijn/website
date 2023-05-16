@@ -13,7 +13,7 @@ function Cases () {
                 <div className='col-sm-6' style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}}>
                   <h2>More about me</h2>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    I am a software engineer and founder from Amsterdam, the Netherlands. I grew up with a passion for new technology and innovation. After graduating a BSc in Artificial Intelligence at the University of Amsterdam I worked for different startups, ranging from a blockchain disruptor to a flower auction platform. I joined <a href="https://bash.social">BASH</a> in 2020 as a co-founder and have been passionately working on it since.
                   </p>
                 </div>
                 <div className='col-sm-6' style={{textAlign: 'right'}}>
@@ -23,7 +23,7 @@ function Cases () {
                       Programming languages
                     </p>
                     <p className='font-italic'>
-                      Javascript, Python, HTML, CSS3
+                      Swift, Javascript, Python, HTML, CSS3
                     </p>
                   </div>
                   <div>
@@ -31,7 +31,7 @@ function Cases () {
                       Frameworks
                     </p>
                     <p className='font-italic'>
-                      React, React-Native
+                      SwiftUI, React, React-Native
                     </p>
                   </div>
                   <div>
@@ -39,7 +39,7 @@ function Cases () {
                       Tools
                     </p>
                     <p className='font-italic'>
-                      Git, Gitlab, Google Cloud, Wordpress
+                      Git, Google Cloud, Wordpress
                     </p>
                   </div>
                   <div>
@@ -47,7 +47,7 @@ function Cases () {
                       Concepts
                     </p>
                     <p className='font-italic'>
-                      Mobile Applications, Blockchain, Web, System Administrator
+                      Product Management, Mobile Applications, Blockchain, Web
                     </p>
                   </div>
                   <div>
