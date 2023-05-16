@@ -9,7 +9,7 @@ function LandingPage () {
       <div className='App row'>
         <div className='Left col-sm-6'>
           <h1>Hi, my name is Max Mijnheer. </h1>
-          <h1>I am a full-stack developer.</h1>
+          <h1>I am a full-stack developer and founder.</h1>
           <Link to='firstCase' smooth className='ArrowDownClick'><FaAngleDown className='ArrowDown' /></Link>
         </div>
         <div className='Right col-sm-6'>
